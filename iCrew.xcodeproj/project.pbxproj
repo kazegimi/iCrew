@@ -16,6 +16,9 @@
 		449FEABD1FCFBA6E00D6F02E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 449FEABC1FCFBA6E00D6F02E /* main.m */; };
 		449FEAC71FCFBA6E00D6F02E /* iCrewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449FEAC61FCFBA6E00D6F02E /* iCrewTests.m */; };
 		449FEAD21FCFBA6E00D6F02E /* iCrewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 449FEAD11FCFBA6E00D6F02E /* iCrewUITests.m */; };
+		449FEAE81FD632FC00D6F02E /* BidirectionalCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 449FEAE71FD632FC00D6F02E /* BidirectionalCollectionLayout.m */; };
+		449FEAF51FD6E60E00D6F02E /* CalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 449FEAF31FD6E60E00D6F02E /* CalendarCollectionViewCell.m */; };
+		449FEAF61FD6E60E00D6F02E /* CalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449FEAF41FD6E60E00D6F02E /* CalendarCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		449FEACD1FCFBA6E00D6F02E /* iCrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		449FEAD11FCFBA6E00D6F02E /* iCrewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCrewUITests.m; sourceTree = "<group>"; };
 		449FEAD31FCFBA6E00D6F02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449FEAE61FD632FC00D6F02E /* BidirectionalCollectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BidirectionalCollectionLayout.h; sourceTree = "<group>"; };
+		449FEAE71FD632FC00D6F02E /* BidirectionalCollectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BidirectionalCollectionLayout.m; sourceTree = "<group>"; };
+		449FEAF21FD6E60E00D6F02E /* CalendarCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		449FEAF31FD6E60E00D6F02E /* CalendarCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		449FEAF41FD6E60E00D6F02E /* CalendarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +113,14 @@
 			children = (
 				449FEAAA1FCFBA6E00D6F02E /* AppDelegate.h */,
 				449FEAAB1FCFBA6E00D6F02E /* AppDelegate.m */,
+				449FEAB01FCFBA6E00D6F02E /* Main.storyboard */,
 				449FEAAD1FCFBA6E00D6F02E /* ViewController.h */,
 				449FEAAE1FCFBA6E00D6F02E /* ViewController.m */,
-				449FEAB01FCFBA6E00D6F02E /* Main.storyboard */,
+				449FEAE61FD632FC00D6F02E /* BidirectionalCollectionLayout.h */,
+				449FEAE71FD632FC00D6F02E /* BidirectionalCollectionLayout.m */,
+				449FEAF21FD6E60E00D6F02E /* CalendarCollectionViewCell.h */,
+				449FEAF31FD6E60E00D6F02E /* CalendarCollectionViewCell.m */,
+				449FEAF41FD6E60E00D6F02E /* CalendarCollectionViewCell.xib */,
 				449FEAB61FCFBA6E00D6F02E /* Assets.xcassets */,
 				449FEAB81FCFBA6E00D6F02E /* LaunchScreen.storyboard */,
 				449FEABB1FCFBA6E00D6F02E /* Info.plist */,
@@ -241,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449FEAF61FD6E60E00D6F02E /* CalendarCollectionViewCell.xib in Resources */,
 				449FEABA1FCFBA6E00D6F02E /* LaunchScreen.storyboard in Resources */,
 				449FEAB71FCFBA6E00D6F02E /* Assets.xcassets in Resources */,
 				449FEAB21FCFBA6E00D6F02E /* Main.storyboard in Resources */,
@@ -270,7 +284,9 @@
 			files = (
 				449FEAAF1FCFBA6E00D6F02E /* ViewController.m in Sources */,
 				449FEAB51FCFBA6E00D6F02E /* iCrew.xcdatamodeld in Sources */,
+				449FEAF51FD6E60E00D6F02E /* CalendarCollectionViewCell.m in Sources */,
 				449FEABD1FCFBA6E00D6F02E /* main.m in Sources */,
+				449FEAE81FD632FC00D6F02E /* BidirectionalCollectionLayout.m in Sources */,
 				449FEAAC1FCFBA6E00D6F02E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = skyElements.iCrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -456,7 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = skyElements.iCrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

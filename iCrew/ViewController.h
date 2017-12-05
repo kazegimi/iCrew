@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *idTableView;
+@property (weak, nonatomic) IBOutlet UICollectionView *calendarCollectionView;
+
 
 
 @end
